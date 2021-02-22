@@ -1,0 +1,94 @@
+html {
+    background-image: linear-gradient(to right, plum, lightblue);
+}
+
+.heading {
+    width: 500px;
+    color: navy;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    font-family: Lucida Sans;
+    background-image: linear-gradient(to left, plum, lightblue);
+}
+
+.main {
+    width: 45%;
+    padding: 35px;
+    margin: 0 auto;
+    background-color: lavender;
+}
+
+.inner {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.inner input {
+    width: 95%;
+    height: 100px;
+    font-size: 55px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-left: 10px solid darkblue;
+    border-right: 10px solid darkblue;
+}
+
+.btn , .opr , .equal {
+    height: 60px;
+    width: 130px;
+    color: white;
+    margin: 4px 8px;
+    font-size: 22px;
+    border-radius: 5px;
+    font-family: monospace;
+    border: 0px solid lavender;
+    background-image: linear-gradient(to right, slateblue , darkslateblue);
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, darkslateblue , slateblue);
+}
+
+.opr {
+    background-image: linear-gradient(to right, darkgreen , seagreen);
+}
+
+.opr:hover {
+    background-image: linear-gradient(to right, seagreen , darkgreen);
+}
+
+.equal {
+    background-image: linear-gradient(to right, orangered , deeppink);
+}
+
+.equal:hover {
+    background-image: linear-gradient(to right, deeppink , orangered);
+}
+
+@media only screen and (max-width: 1350px) {
+    html {
+        zoom: 130%;
+    }
+    .heading {
+        margin-top: 250px;
+    }
+    h1 {
+        padding: 5px;
+    }
+    .main {
+        width: 82%;
+        margin-top: 80px;
+    }
+    .inner input {
+        height: 120px;
+    }
+    .btn , .opr , .equal {
+        font-size: 30px;
+    }
+}
+

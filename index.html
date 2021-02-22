@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignments</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="heading">WEB AND MOBILE HYBRID APPLICATION DEVELOPMENT</h1>
+    </div>
+
+    <div id="myself">
+        <div>
+            <img id="profile" src="Profile.jpg" alt="Mavia Ali">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img">
+                <div id="caption"></div>
+            </div>
+        </div>
+        <div id="mydetails">
+            <h1>Mavia Ali</h1>
+            <h2>Roll No: WM5295</h2>
+            <h2>
+                <abbr title="facebook"><a class="fa fa-facebook-square" id="contact"
+                        href="https://facebook.com/maviaali.963" target="_blank"></a></abbr>
+                <abbr title="twitter"> <a class="fa fa-twitter-square" id="contact"
+                        href="https://twitter.com/maviaali597" target="_blank"></a></abbr>
+                <abbr title="linkedin"><a class="fa fa-linkedin-square" id="contact"
+                        href="https://pk.linkedin.com/in/mavia-ali-0117631b9" target="_blank"></a></abbr>
+                <abbr title="Email"><i id="mailto" class="fa fa-envelope-square"></i></abbr>
+                <a id="mail" title="Email" href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                    target="_blank">maviaali597@gmail.com</a>
+            </h2>
+        </div>
+    </div>
+    <hr id="none">
+
+    <div>
+        <center>
+            <h1 id="assignments">My Assignments<hr></h1>
+        </center>
+    </div>
+
+    <div id="buttons">
+        <center>
+            <a class="button" href="Assignment_1/asgmt1.html">Assignment # 1</a>
+            <a class="button" href="Assignment_2/asgmt2.html">Assignment # 2</a>
+            <a class="button" href="Assignment_3/index.html">Assignment # 3</a>
+            <a class="button" href="https://hyderabadiacharhouse.web.app" target="_blank">Assignment # 4</a>
+            <a class="button" href="https://github.com/Mavia-Ali-11/JavaScript" target="_blank">Assignment # 5</a>
+            <a class="button" href="https://github.com/Mavia-Ali-11/JSAssignment-6" target="_blank">Assignment # 6</a>
+            <a class="button" href="Assignment_7/index.html">Assignment # 7</a>
+            <a class="button" href="Assignment_8/index.html">Assignment # 8</a>
+            <a class="button" href="https://github.com/Mavia-Ali-11/JSTasks1-67" target="_blank">Assignment # 9</a>
+            <a class="button" href="Assignment_10/index.html">Assignment # 10</a>
+            <a class="button" href="Assignment_11/index.html">Assignment # 11</a>
+            <a class="button" href="Assignment_12/index.html">Assignment # 12</a>
+            <!-- <a class="button" href="Web Scraping/index.html">WEB SCRAP</a> -->
+        </center>
+    </div>
+
+    <br>
+
+    <div id="footer">
+        <div id="course">
+            <h4>Offered by</h4>
+            <a href="https://www.facebook.com/groups/WebMobileAppCourse" target="_blank">Saylani Mass IT
+                Training</a><br>
+            <a href="https://www.facebook.com/saylaniwelfare" target="_blank">Saylani Welfare International Trust</a>
+        </div>
+        <div id="instruct">
+            <h4>Instructors</h4>
+            <a href="https://www.facebook.com/muhammad.mughal.5203" target="_blank">Muhammad Ali Mughal</a><br>
+            <a href="https://www.facebook.com/Ghousahmed91" target="_blank">Ghous Ahmed</a><br>
+            <a href="https://www.facebook.com/basitahmed786" target="_blank">Basit Ahmed</a>
+        </div>
+        <div id="copyright">
+            <a href="#">Copyright &copy; 2020</a>
+        </div>
+    </div>
+
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("profile");
+        var modalImg = document.getElementById("img");
+        var captionText = document.getElementById("caption");
+        var span = document.getElementsByClassName("close")[0];
+
+        this.onload = function () {
+            modal.style.display = "none";
+            span.style.display = "none";
+        }
+
+        img.onclick = function () {
+            modalImg.src = this.src;
+            modal.style.display = "block";
+            span.style.display = "block";
+            captionText.innerHTML = this.alt;
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+</html>

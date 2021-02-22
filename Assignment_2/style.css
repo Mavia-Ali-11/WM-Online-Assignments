@@ -1,0 +1,19 @@
+h3 {
+    font-family: Calibri;
+    font-size: 25pt;
+    color: slateblue;
+}
+
+table{
+    background-color: slateblue;
+    color: white;
+    font-family: Calibri;
+    font-size: 11pt;
+    font-weight: bold;
+    border: 2px solid navy;
+    border-collapse: collapse;
+}
+
+table table {
+    border: 0px;
+}

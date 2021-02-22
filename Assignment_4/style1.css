@@ -1,0 +1,239 @@
+html , body {
+    margin: 0px;
+    padding: 0px; 
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: white;
+    background: #333333;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('Fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url('Fonts/Merriweather-Bold.ttf');
+}
+
+@font-face {
+    font-family: OriginalSurfer;
+    src: url('Fonts/OriginalSurfer.ttf');
+}
+
+.navbar {
+    z-index: 99;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 3px 5px darkgray;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 0;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+#title {
+    color: navy;
+    transition: 1s;
+    font-size: 27px;
+    font-weight: bold;
+    margin-left: 50px;
+    letter-spacing: 1px;
+    font-family: OpenSans;
+}
+
+#title:hover {
+    transition: 1s;
+    letter-spacing: 3px;
+}
+
+#page {
+    color: white;
+    margin-left: 30px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border-radius: 5px;
+    font-family: OpenSans;
+    background-color: steelblue;
+}
+
+#pages {
+    transition: 0.3s;
+    margin-left: 30px;
+    padding: 7px 15px;
+    color: darkblue;
+    border-radius: 5px;
+    border-radius: 5px;
+    font-family: OpenSans;
+}
+
+#pages:hover {
+    color: white;
+    transition: 0.3s;
+    background-color: steelblue;
+}
+
+@media only screen and (max-width: 980px) {
+    .navbar-nav {
+        margin-left: 0px;
+    }
+    #title {
+        padding: 10px;
+        font-size: 20px;
+        margin-left: 10px;
+        letter-spacing: 0px;
+    }
+    .my img {
+        height: 250px;
+    }
+}
+
+#title2 {
+    width: auto;
+    border-radius: 5px 100px;
+    background-color: #333333;
+}
+
+#title2 h1 {
+    font-size: 30px;
+    padding-top: 15px;
+    color: goldenrod;
+    display: inline-block;
+    font-family: OriginalSurfer;
+}
+
+#title2 h1::first-letter  {
+    font-size: 60px;
+}
+
+#title2 h4 , h6 {
+    color: white;
+}
+
+#about {
+    color: navy;
+    letter-spacing: 1px;
+    font-family: Merriweather;
+}
+
+.hr {
+    width: 40px;
+    border-top: 2px solid navy;
+}
+
+.about {
+    width: 70%;
+    margin: 0px auto;
+    text-align: justify;
+}
+
+.text {
+    padding: 100px;
+    font-size: 18px;
+    color: #666666;
+    line-height: 25px;
+    font-family: Arial;
+    background-color: #f0f0fa;
+}
+
+
+@media only screen and (max-width: 980px) {
+    .about {
+        width: 100%;
+    }
+    .text {
+        padding: 30px;
+        border-radius: 0px;
+    }
+    #title2 {
+        margin: 0 auto;
+        border-radius: 0px;
+    }
+    #title2 h1 {
+        font-size: 18px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    #title2 h1::first-letter{
+        font-size: 28px;
+    }
+    #title2 h4 , h6 {
+        font-size: 15px;
+    }
+}
+
+.menu {
+    padding: 5px;
+    color: green;
+    transition: 0.5s;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid green;
+}
+
+.menu:hover {
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+    background-color: green;
+}
+
+.copy {
+    width: 100%;
+    height: 46px;
+    background-color: #333333;
+}
+
+.claim {
+    top: 10px;
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.claim p {
+    color: white;
+    font-size: 13.5px;
+    text-align: center;
+    font-family: OpenSans;
+}
+
+.mainCard {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 90px;
+    justify-content: space-around;
+}
+
+.card1 , .card2 , .card3 {
+    width: 300px;
+    height: 160px;
+    display: flex;
+    transition: 1s;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.design {
+    width: 90%;
+    height: 160px;
+}
+
+#design {
+    height: 180px;
+    transform: rotate(20deg);
+}

@@ -1,0 +1,285 @@
+html , body {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: white;
+    background: #333333;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('Fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url('Fonts/Merriweather-Bold.ttf');
+}
+
+@font-face {
+    font-family: OriginalSurfer;
+    src: url('Fonts/OriginalSurfer.ttf');
+}
+
+.navbar {
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 3px 5px darkgray;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+#title {
+    color: navy;
+    transition: 1s;
+    font-size: 27px;
+    font-weight: bold;
+    margin-left: 50px;
+    letter-spacing: 1px;
+    font-family: OpenSans;
+}
+
+#title:hover {
+    opacity: 0.7;
+    transition: 1s;
+    letter-spacing: 3px;
+}
+
+#page {
+    color: white;
+    margin-left: 30px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border-radius: 5px;
+    font-family: OpenSans;
+    background-color: steelblue;
+}
+
+#pages {
+    transition: 0.3s;
+    margin-left: 30px;
+    padding: 7px 15px;
+    color: darkblue;
+    border-radius: 5px;
+    border-radius: 5px;
+    font-family: OpenSans;
+}
+
+#pages:hover {
+    color: white;
+    transition: 0.3s;
+    background-color: steelblue;
+}
+
+@media only screen and (max-width: 980px) {
+    .navbar-nav {
+        margin-left: 0px;
+    }
+    #title {
+        padding: 10px;
+        font-size: 20px;
+        margin-left: 10px;
+        letter-spacing: 0px;
+    }
+}
+
+#title2 {
+    width: auto;
+    border-radius: 5px 100px;
+    background-color: #333333;
+}
+
+#title2 h1 {
+    font-size: 30px;
+    padding-top: 15px;
+    color: goldenrod;
+    display: inline-block;
+    font-family: OriginalSurfer;
+}
+
+#title2 h1::first-letter {
+    font-size: 60px;
+}
+
+#title2 h4 , h6 {
+    color: white;
+}
+
+
+#about {
+    margin-top: 100px;
+    color: navy;
+    letter-spacing: 1px;
+    font-family: Merriweather;
+}
+
+.hr {
+    width: 60px;
+    border-top: 2px solid navy;
+}
+
+@media only screen and (max-width: 980px) {
+    #title2 {
+        margin: 0 auto;
+        border-radius: 0px;
+    }
+    #title2 h1 {
+        font-size: 18px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    #title2 h1::first-letter{
+        font-size: 28px;
+    }
+    #title2 h4 , h6 {
+        font-size: 15px;
+    }
+}
+
+.table {
+    width: 70%;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 20px;
+    border-spacing: 15px 5px;
+    border-collapse: separate;
+    background-color: #f0f0f0;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .table {
+        zoom: 70%;
+        padding: 0px;
+        background: none;
+    }
+
+    td {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .table {
+        zoom: 50%;
+        padding: 0px;
+        background: none;
+    }
+}
+
+.hah {
+    color: navy;
+    font-size: 30px;
+    text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    font-family: OpenSans;
+    border: 5px solid navy;
+    background-color: lavender;
+}
+
+.hah hr {
+    width: 65%;
+}
+
+.hah h5 {
+    color: green;
+    font-weight: bold;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.items {
+    color: #316dc3;
+    text-align: center;
+    font-family: OpenSans;
+    background-color: lavender;
+    border: 3px solid dodgerblue;
+}
+
+td {
+    width: 5%;
+    transition: .3s;
+    color: #333333;
+    empty-cells: hide;
+    text-align: center;
+    font-family: sans-serif;
+    background-color:lavender;
+}
+
+td:hover {
+    transition: .3s;
+    color: white;
+    letter-spacing: 1px;
+    background-color: steelblue;
+}
+
+.umm {
+    color: navy;
+    font-size: 30px;
+    text-align: center;
+    border: 5px solid navy;
+    font-family: Merriweather;
+}
+
+.describe {
+    color: white;
+    font-size: 16px;
+    transition: 0.8s;
+    text-align: center;
+    font-family: OpenSans;
+    background-color: navy;
+}
+
+.describe:hover {
+    transition: 0.8s;
+    letter-spacing: 2px;
+    background-color: navy;
+}
+
+.copy {
+    width: 100%;
+    height: 46px;
+    background-color: #333333;
+}
+
+.claim {
+    top: 10px;
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.claim p {
+    color: white;
+    font-size: 13.5px;
+    text-align: center;
+    font-family: OpenSans;
+}
+
+#order {
+    width: 95%;
+    box-shadow: 0 0 7px gray;
+    background-color: dodgerblue;
+}
+
+#order h5 {
+    color: white;
+    font-size: 18px;
+    margin: 30px auto;
+    font-family: OpenSans;
+}
+
+#order span {
+    font-size: 20px;
+}
